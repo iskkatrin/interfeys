@@ -1,5 +1,7 @@
 public class Truck extends Vehicle {
-    public void checkTrailer() {
-        System.out.println("Проверяем прицеп");
+    @Override
+    public void check() {
+        updateTyre();
+        checkEngine();
     }
 }
